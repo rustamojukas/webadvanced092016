@@ -14,5 +14,8 @@
     "app/bower",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "jquery": "^3.1.0"
+  }
 }
