@@ -1,0 +1,62 @@
+/**
+ * About styles
+ */
+.about{
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+.about-title{
+  font-family: 'FiraSansMedium';
+  font-size: 42px;
+  color: #262626;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-subtitle{
+  font-family: 'FiraSansLight';
+  font-size: 21px;
+  color: #727272;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.about-item{
+  width: 50%;
+  float: left;
+  display: flex;
+  padding: 0 10px;
+}
+
+.about-item-image{
+  width: 140px;
+  height: 140px;
+  .about-item-image-file{
+    max-width: 140px;
+    max-height: 140px;
+  }
+}
+
+.about-item-description{
+  padding: 0 20px;
+}
+
+.about-item-description-title{
+  margin-top: 0;
+  color: #262626;
+  font-family: 'FiraSansRegular';
+  font-size: 21px;
+}
+
+.about-item-description-text{
+  color: #727272;
+  font-family: 'FiraSansLight';
+  font-size: 14px;
+  line-height: 1.5;
+  a{
+    color: #5fa7f1;
+    text-decoration: underline;
+  }
+}

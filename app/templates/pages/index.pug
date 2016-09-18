@@ -1,0 +1,132 @@
+extends ../layout
+
+block title
+  title Тестовое задание Rustam Ojukas
+block content
+  .container
+    section.about.clearfix
+      h1.about-title О будущем ученике
+      p.about-subtitle Ребятам из LoftSchool будет полезно узнать немного обо мне
+      .about-item
+        .about-item-image
+          img.about-item-image-file(src="img/icons/hello.svg", alt="Hello")
+        .about-item-description
+          h2.about-item-description-title Немного обо мне
+          .about-item-description-text
+            p.
+              Я живу в Тарту (Эстония).
+              Мне 32 года.
+              Опыт в разработке разных проектов уже несколько лет. Это мой первый курс на LoftSchool.
+            p.
+              Пока есть только один сайт, которым могу похвастаться: <a href="http://zp.aurora.ua/" title="zp.aurora.ua">zp.aurora.ua</a>
+      .about-item
+        .about-item-image
+          img.about-item-image-file(src="img/icons/experience.svg", alt="Experience")
+        .about-item-description
+          h2.about-item-description-title Мой опыт а разработке
+          .about-item-description-text
+            p.
+              В этом блоке я расскажу о себе, что я уже умею.
+              Здесь я укажу другие курсы, которые до этого я уже проходил.
+              Могу перечислить технологии, которыми уже умею пользоваться.
+              К примеру: html5, css3, sass, jade, git и пр.
+  .courses-wrapper
+    .container
+      section.courses.clearfix
+        h1.courses-title Курсы на loftblog
+        p.courses-subtitle которые мне помогут в выполнение этого задания
+        .row.clearfix
+          .courses-item
+            .courses-item-inner
+              .courses-item-image
+                img.courses-item-image-file(src="img/js.png", alt="JS")
+              .courses-item-description
+                h2.courses-item-description-title Основы JavaScript
+                .courses-item-description-text
+                  p.
+                    Видеокурс о одном из самых популярных языков программирования - JavaScript.
+                    Изучая этот курс вы познаете этот прекрасный язык от самых основ.
+                .courses-item-description-meta
+                  p.
+                    24 урока (6 часов 46 минут)
+              .courses-item-action
+                input(type="checkbox" class="courses-item-action-checkbox" id="action-checkbox-js")
+                label(for="action-checkbox-js") Посмотрел
+          .courses-item
+            .courses-item-inner
+              .courses-item-image
+                img.courses-item-image-file(src="img/jquery.png", alt="JQuery")
+              .courses-item-description
+                h2.courses-item-description-title Основы JQUERY
+                .courses-item-description-text
+                  p.
+                    Видеокурс о одном из самых популярных языков программирования - JavaScript.
+                    Изучая этот курс вы познаете этот прекрасный язык от самых основ.
+                .courses-item-description-meta
+                  p.
+                    11 уроков (2 часа 6 минут)
+              .courses-item-action
+                input(type="checkbox" class="courses-item-action-checkbox" id="action-checkbox-jquery")
+                label(for="action-checkbox-jquery") Посмотрел
+          .courses-item
+            .courses-item-inner
+              .courses-item-image
+                img.courses-item-image-file(src="img/base.png", alt="Base")
+              .courses-item-description
+                h2.courses-item-description-title Базовые элементы страницы
+                .courses-item-description-text
+                  p.
+                    Видеокурс по верстке и программированию основных и популярных элементов сайтов.
+                    Посмотрев этот курс вы научитесь создавать табы, аккордеон, слайдшоу, слайдер и т.д.
+                .courses-item-description-meta
+                  p.
+                    9 уроков (2 часа 7 минут)
+              .courses-item-action
+                input(type="checkbox" class="courses-item-action-checkbox" id="action-checkbox-base")
+                label(for="action-checkbox-base") Посмотрел
+        .row.clearfix
+          .courses-item
+            .courses-item-inner
+              .courses-item-image
+                img.courses-item-image-file(src="img/adaptive.png", alt="Adaptive")
+              .courses-item-description
+                h2.courses-item-description-title Создание адаптивных сайтов
+                .courses-item-description-text
+                  p.
+                    В этом курсе вы узнаете как создавать адаптивные сайты, что такое адаптивная верстка и дизайн.
+                .courses-item-description-meta
+                  p.
+                    7 уроков (2 часа 11 минут)
+              .courses-item-action
+                input(type="checkbox" class="courses-item-action-checkbox" id="action-checkbox-adaptive")
+                label(for="action-checkbox-adaptive") Посмотрел
+          .courses-item
+            .courses-item-inner
+              .courses-item-image
+                img.courses-item-image-file(src="img/btn.png", alt="Button")
+              .courses-item-description
+                h2.courses-item-description-title Верстка адаптивной css галереи
+                .courses-item-description-text
+                  p.
+                    В этом видеокурсе вы изучите инструменты, техники и подходы для web-разработчика, которые помогут вам решать поставленные задачи более быстро и эффективно.
+                .courses-item-description-meta
+                  p.
+                    6 уроков (1 час 9 минут)
+              .courses-item-action
+                input(type="checkbox" class="courses-item-action-checkbox" id="action-checkbox-btn")
+                label(for="action-checkbox-btn") Посмотрел
+          .courses-item
+            .courses-item-inner
+              .courses-item-image
+                img.courses-item-image-file(src="img/css.png", alt="CSS")
+              .courses-item-description
+                h2.courses-item-description-title Верстка адаптивной css галереи
+                .courses-item-description-text
+                  p.
+                    В этом курсе мы разберем как сверстать адаптивную css галерею. Также познакомимся с Flexbox.
+                .courses-item-description-meta
+                  p.
+                    4 урока (50 минут)
+              .courses-item-action
+                input(type="checkbox" class="courses-item-action-checkbox" id="action-checkbox-css")
+                label(for="action-checkbox-css") Посмотрел

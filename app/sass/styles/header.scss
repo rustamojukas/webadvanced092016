@@ -1,0 +1,78 @@
+/**
+ * Header styles
+ */
+.main-header{
+  height: 90px;
+  background-color: #8cc34b;
+  box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+
+.user-info{
+  height: 100%;
+  float: left;
+  margin-left: 28px;
+  display: table;
+}
+
+.user-image{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.user-image-decor{
+  width: 62px;
+  height: 62px;
+  position: relative;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  overflow: hidden;
+
+  img{
+    max-width: 62px;
+    display: block;
+    position: absolute;
+    top: -10px;
+  }
+
+}
+
+.user-description{
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 18px;
+}
+
+.user-name{
+  font-family: 'FiraSansMedium';
+  font-size: 21px;
+  color: #ffffff;
+}
+
+.user-email{
+  font-family: 'FiraSansRegular';
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.user-social{
+  height: 100%;
+  float: right;
+  margin-right: 30px;
+  display: table;
+}
+
+.social-item{
+  display: table-cell;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+
+.social-icon{
+  path{
+    fill: rgba(255, 255, 255, 0.7);
+
+    &:hover{
+      fill: #ffffff;
+    }
+  }
+}

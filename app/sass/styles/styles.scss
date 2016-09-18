@@ -1,0 +1,94 @@
+/**
+ * Setup styles
+ */
+*{
+  box-sizing: border-box;
+}
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+body{
+  width: 100%;
+  height: 100%;
+  font-family: 'Fira Sans', sans-serif;
+  background-color: #ffffff;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+
+  li{
+    list-style: none;
+  }
+
+}
+
+p{
+  margin: 0;
+  padding: 0;
+}
+
+a{
+  text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.wrapper{
+  min-height: 100%;
+  min-width: 970px;
+  overflow: hidden;
+}
+
+.container{
+  width: 960px;
+  margin: 0 auto;
+}
+
+.empty{
+  height: 72px;
+}
+
+.course-checked{
+  position: relative;
+}
+
+.course-checked:after{
+  position: relative;
+  content: "";
+  background-color: #8cc34b;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.success-item-wrapper{
+  text-align: center;
+  color: #8cc34b;
+}
+
+.success-item::before{
+  content: "\f00c";
+  font-family: 'FontAwesome';
+  margin-right: 20px;
+}
+
+.success-item{
+  font-size: 42px;
+  font-family: 'FiraSansMedium';
+}

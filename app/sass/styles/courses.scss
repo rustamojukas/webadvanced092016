@@ -1,0 +1,155 @@
+/**
+ * Courses styles
+ */
+.courses-wrapper{
+  position: relative;
+}
+
+.courses-wrapper:after{
+  content: "";
+  background-color: #f6f7f2;
+  background-image: url('../img/gplaypattern.png');
+  background-repeat: repeat;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.courses{
+  padding-top: 78px;
+  padding-bottom: 78px;
+}
+
+.courses-title{
+  font-family: 'FiraSansMedium';
+  font-size: 42px;
+  color: #262626;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.courses-subtitle{
+  font-family: 'FiraSansLight';
+  font-size: 21px;
+  color: #727272;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.courses-item{
+  width: 33%;
+  float: left;
+  padding: 0 10px;
+  margin-bottom: 20px;
+}
+
+.courses-item-inner{
+  box-shadow: 0 1px 6px rgba(0,0,0,0.2);
+}
+
+.courses-item-image{
+  width: 100%;
+  height: 170px;
+}
+
+.courses-item-image-file{
+  max-height: 170px;
+  width: 100%;
+  height: 100%;
+}
+
+.courses-item-description{
+  background-color: #ffffff;
+  padding: 20px;
+  position: relative;
+}
+
+.courses-item-description:hover{
+  box-shadow: 0px -5px 0px 0px #9dc255;
+  h2{
+    color: #9dc255;
+  }
+}
+
+.courses-item-description-title{
+  margin-top: 0;
+  color: #262626;
+  font-family: 'FiraSansRegular';
+  font-size: 21px;
+}
+
+.courses-item-description-text{
+  color: #727272;
+  font-family: 'FiraSansLight';
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.courses-item-description-meta p{
+  color: #b5b5b5;
+  font-family: 'FiraSansLight';
+  font-size: 14px;
+  position: relative;
+  padding-left: 16px;
+}
+
+.courses-item-description-meta p:before{
+  content: "\f017";
+  font-family: 'FontAwesome';
+  position: absolute;
+  left: 0;
+}
+
+.courses-item-action{
+  height: 60px;
+  background-color: #f6f7f2;
+  padding: 20px;
+
+  input[type=checkbox]{
+	  display: none;
+  }
+
+  label{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 38px;
+    font-family: 'FiraSansRegular';
+    font-size: 18px;
+    color: #727272;
+  }
+
+  label:before{
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    background-color: #ffffff;
+    border: 2px solid #b6b6b6;
+    border-radius: 2px
+  }
+
+  input[type=checkbox]:checked + label:before{
+  	content: "\f00c";
+    font-family: 'FontAwesome';
+  	font-size: 14px;
+  	color: #ffffff;
+  	text-align: center;
+    line-height: 18px;
+    background-color: #9dc255;
+    border-color: #9dc255;
+  }
+
+  input[type=checkbox]:checked + label{
+        color: #9dc255;
+      }
+}

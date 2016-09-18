@@ -1,0 +1,14 @@
+include ./includes/mixins
+doctype html
+html
+  include ./includes/head
+  body
+    .wrapper
+      include ./includes/header
+      block content
+      .empty
+    include ./includes/footer
+
+    //scripts
+    +linkScripts("js/jquery.min.js")
+    +linkScripts("js/main.js")
