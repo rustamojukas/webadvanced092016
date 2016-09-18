@@ -58,7 +58,7 @@ gulp.task('remove', function () {
 });
 
 // Build project
-gulp.task('build', ['remove', 'pug', 'sass'], function () {
+gulp.task('build', ['remove', 'venjs', 'pug', 'sass'], function () {
   var buildCss = gulp.src('app/css/**/*')
       .pipe(gulp.dest('dist/css/'));
 
