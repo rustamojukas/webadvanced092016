@@ -680,16 +680,20 @@ a {
 .about-item {
   width: 50%;
   float: left;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  position: relative;
+  /*1*/
   padding: 0 10px;
 }
 
 .about-item-image {
   width: 140px;
   height: 140px;
+  position: absolute;
+  /*1*/
+  top: 0;
+  /*1*/
+  left: 10px;
+  /*1*/
 }
 
 .about-item-image .about-item-image-file {
@@ -698,7 +702,10 @@ a {
 }
 
 .about-item-description {
-  padding: 0 20px;
+  padding: 0 10px 0 20px;
+  /*1*/
+  margin-left: 140px;
+  /*1*/
 }
 
 .about-item-description-title {
@@ -820,6 +827,8 @@ a {
   color: #b5b5b5;
   font-family: 'FiraSansLight';
   font-size: 14px;
+  line-height: 14px;
+  /*1*/
   position: relative;
   padding-left: 16px;
 }
@@ -848,6 +857,8 @@ a {
   padding-left: 38px;
   font-family: 'FiraSansRegular';
   font-size: 18px;
+  line-height: 20px;
+  /*1*/
   color: #727272;
 }
 

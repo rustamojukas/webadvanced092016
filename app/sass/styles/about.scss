@@ -26,13 +26,16 @@
 .about-item{
   width: 50%;
   float: left;
-  display: flex;
+  position: relative;
   padding: 0 10px;
 }
 
 .about-item-image{
   width: 140px;
   height: 140px;
+  position: absolute;
+  top: 0;
+  left: 10px;
   .about-item-image-file{
     max-width: 140px;
     max-height: 140px;
@@ -40,7 +43,8 @@
 }
 
 .about-item-description{
-  padding: 0 20px;
+  padding: 0 10px 0 20px;
+  margin-left: 140px;
 }
 
 .about-item-description-title{
